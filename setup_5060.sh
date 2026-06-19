@@ -10,8 +10,8 @@ python3 -m venv .venv --upgrade-deps
 source .venv/bin/activate
 
 echo ""
-echo "=== 安装 PyTorch (CUDA 12.6) ==="
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+echo "=== 安装 PyTorch (CUDA 13.2 nightly, 支持 Blackwell RTX 5060) ==="
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu132
 
 echo ""
 echo "=== 安装科研依赖 ==="
